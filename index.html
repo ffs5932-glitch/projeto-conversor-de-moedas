@@ -20,37 +20,62 @@
     <main>
         <label>
             <strong> converter de </strong>
-            <select>
-                <option> $ Real Brasileiro </option>
+            <!-- ✅ MUDADO: Adicionado class="currency-from" e value em todas as options -->
+            <select class="currency-from">
+
+                <option value="real"> $ Real Brasileiro </option>
+                <option value="dolar"> US$ Dólar Americano</option>
+                <option value="euro"> € Euro </option>
+                <option value="libra"> £ Libra</option>
+                <option value="bitcoin"> ₿ Bitcoin </option>
+
+
             </select>
         </label>
 
         <label>
             <strong> converter para </strong>
+
             <select class="currency-select">
-                <option value="dolar">US$ Dólar Americano</option>
-                <option value="euro">€ Euro </option>
-                <option value="libra">£ Libra </option>
-                <option value="bitcoin"> Bitcoin</option>
+                <option value="dolar">   US$ Dólar Americano</option>
+                <option value="euro">    € Euro </option>
+                <option value="libra">   £ Libra </option>
+                <option value="bitcoin"> ₿  Bitcoin</option>
+                <!-- ✅ MUDADO: Removido espaço em branco do value "real " para "real" -->
+                <option value="real">   $ Real Brasileiro </option>
+
+
+
             </select>
         </label>
 
         <label> <strong> valor </strong>
+
             <input class="input-currency" placeholder="10.0000,00">
         </label>
+
+
         <button class="convert-button"> converter </button>
         <section>
 
 
             <div class="currency-box">
-                <img src="./assets/real.png" alt="logo-moeda-a converter">
-                <p class="currency"> real </p>
+
+                <!-- ✅ MUDADO: Adicionado class="currency-img-from" -->
+                <img class="currency-img-from" src="./assets/real.png" alt="logo-moeda-a converter"> 
+
+                <!-- ✅ MUDADO: Adicionado id="currency-name-from" e alterado conteúdo de "real" para "Real Brasileiro" -->
+                <p class="currency" id="currency-name-from"> Real Brasileiro </p>
+                
                 <p class="currency-value-to-convert"> R$ 0,00</p>
+
             </div>
 
             <img class="arrow" src="./assets/logo 5.png" alt="seta">
 
             <div class="currency-box">
+
+
                 <img class="currency-img" src="./assets/logo4.png" alt="logo-moeda-convertida">
                 <p class="currency" id="currency-name"> Dólar americano </p>
                 <p class="currency-value"> US$ 0,00</p>
