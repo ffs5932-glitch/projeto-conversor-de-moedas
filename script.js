@@ -44,7 +44,7 @@ function convertValues() {
         dolar: "en-US",
         euro: "de-DE",
         libra: "en-GB",
-        bitcoin: "pt-BR"
+        bitcoin: "pt-BR",
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat(locales[fromCurrency], {
